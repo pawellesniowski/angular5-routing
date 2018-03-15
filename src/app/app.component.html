@@ -1,7 +1,23 @@
 
-<a routerLink="/">Home</a>
-<a routerLink="/contact">Contact</a>
-<a routerLink="/error">Error</a>
+<nav class="nav">
+  <a
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+  >
+    Home</a>
+  <a
+    routerLink="/contact"
+    routerLinkActive="active"
+  >
+    Contact</a>
+  <a
+    routerLink="/error"
+    routerLinkActive="active"
+  >
+    Error</a>
+</nav>
+
 
 <router-outlet></router-outlet>
 
